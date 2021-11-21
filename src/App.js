@@ -1,8 +1,9 @@
 import './App.css';
 import Navbar from "./components/Navbar";
-import {BrowserRouter, Route, Switch} from "react-router-dom";
+import {BrowserRouter, Route} from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
+import Post from "./components/Post";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                 {/*with EXACT the route will behave only if there is / on the URL*/}
                 <Route exact path="/" component={Home}/>
                 <Route path="/about" component={About}/>
+                <Route path="/:post_id" component={Post}/>
             </div>
         </BrowserRouter>
     );
