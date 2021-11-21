@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.post-card {
+  margin: 40px;
+  padding: 20px;
+  background: lightgray;
+  color: black;
+  cursor: default;
+}
+
+.btn {
+  padding: 4px;
+  background-color: white;
+  cursor: pointer;
+}
