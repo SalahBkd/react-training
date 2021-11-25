@@ -3,11 +3,22 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+// REDUX SETUP
+import {applyMiddleware, createStore} from "redux";
+import {Provider} from "react-redux";
+import rootReducer from "./store/reducers/rootReducer";
+import thunk from "redux-thunk";
+
+// we are enhancing our store with an extra functionality (thunk), other examples: logging, crash reporting..etc
+const store = createStore(rootReducer, applyMiddleware(thunk));
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+      <React.StrictMode>
+          <Provider store={store}>
+            <App />
+          </Provider>
+      </React.StrictMode>
+,
   document.getElementById('root')
 );
 

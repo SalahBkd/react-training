@@ -1,0 +1,64 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "title 1",
+      "body": "body 1"
+    },
+    {
+      "id": 2,
+      "title": "title 2",
+      "body": "body 2"
+    },
+    {
+      "id": 3,
+      "title": "title 3",
+      "body": "body 3"
+    },
+    {
+      "id": "4",
+      "title": "adzd",
+      "body": "adad"
+    },
+    {
+      "id": "5",
+      "title": "asasd",
+      "body": "asas"
+    },
+    {
+      "id": "6",
+      "title": "aeae",
+      "body": "adsas"
+    },
+    {
+      "id": "7",
+      "title": "asas",
+      "body": "asas"
+    },
+    {
+      "id": "8",
+      "title": "sasa",
+      "body": "sasa"
+    },
+    {
+      "id": "9",
+      "title": "asas",
+      "body": "asa"
+    },
+    {
+      "id": "10",
+      "title": "sasasa",
+      "body": "asasas"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
